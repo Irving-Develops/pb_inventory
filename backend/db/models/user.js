@@ -69,6 +69,11 @@ module.exports = (sequelize, DataTypes) => {
           len: [60, 60],
         },
       },
+      admin: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false
+      },
     },
     {
       sequelize,
