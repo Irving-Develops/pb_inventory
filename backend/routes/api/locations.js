@@ -4,7 +4,7 @@ const {Location, Keystock} = require('../../db/models')
 const router = express.Router();
 
 router.get('/', asyncHandler(async(req,res) => {
-    const locations = await Location.findAl()
+    const locations = await Location.findAll()
     return res.json(locations)
 }))
 
@@ -14,7 +14,7 @@ router.post('/', asyncHandler(async(req,res) => {
     return res.json(location)
 }))
 
-router.delete('/:location_id(\\d+)', asyncHandler(async(req,res) => {
+router.delete('/:locationId(\\d+)', asyncHandler(async(req,res) => {
     const {locationId} = req.params;
     const location = await Location.findByPk(locationId)
     await location.destroy()

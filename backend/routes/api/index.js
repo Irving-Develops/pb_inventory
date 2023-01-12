@@ -45,6 +45,6 @@ router.use("/session", sessionRouter);
 
 router.use("/users", usersRouter);
 
-router.use("/location", locationsRouter)
+router.use("/locations", locationsRouter)
 
 module.exports = router;
