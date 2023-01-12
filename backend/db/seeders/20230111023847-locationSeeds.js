@@ -4,142 +4,141 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
 
     await queryInterface.bulkInsert('Locations', [{
-        // id: 1,
+        number: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 2,
+        number: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 3,
+        number: 3,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 4,
+        number: 4,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 5,
+        number: 5,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 6,
+        number: 6,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 7,
+        number: 7,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 8,
+        number: 8,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 9,
+        number: 9,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 10,
+        number: 10,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 11,
+        number: 11,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 12,
+        number: 12,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 13,
+        number: 13,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 14,
+        number: 14,
         createdAt: new Date(),
         updatedAt: new Date(),
-
       },
       {
-        // id: 15,
+        number: 15,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 16,
+        number: 16,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 17,
+        number: 17,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 18,
+        number: 18,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 19,
+        number: 19,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 20,
+        number: 20,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 21,
+        number: 21,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 22,
+        number: 22,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 23,
+        number: 23,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 24,
+        number: 24,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 25,
+        number: 25,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 26,
+        number: 26,
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        // id: 27,
+        number: 27,
         createdAt: new Date(),
         updatedAt: new Date()
       },
-    ], {});
+    ], {returning: true});
   },
 
   down: async (queryInterface, Sequelize) => {

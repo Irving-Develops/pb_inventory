@@ -13,7 +13,7 @@ module.exports = {
       location_id: 14,
       createdAt: new Date(),
       updatedAt: new Date()
-    }], {});
+    }], {returning: true});
   },
 
   down: async (queryInterface, Sequelize) => {

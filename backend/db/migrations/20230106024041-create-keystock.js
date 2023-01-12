@@ -38,7 +38,7 @@ module.exports = {
       },
       location_id: {
         type: Sequelize.INTEGER,
-        references: {model: 'Keystocks'}
+        references: {model: 'Locations'}
       },
       createdAt: {
         allowNull: false,
