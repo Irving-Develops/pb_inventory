@@ -1,4 +1,5 @@
 import {useDispatch, useSelector} from 'react-redux'
+import {Link} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { getLocationsThunk } from '../../store/locations'
 
@@ -16,7 +17,7 @@ export default function GetLocations () {
             TEST
             {locations?.map(loc => (
                 <div key={loc.id} >
-                    {loc.number}
+                    <Link to={`/${loc.number}`}>{loc.number}</Link>
                 </div>
             ))}
         </div>
