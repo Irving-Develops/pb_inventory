@@ -7,7 +7,7 @@ const {
 const router = express.Router();
 
 router.get('/', asyncHandler(async (req, res) => {
-    const keystocks = await Keystock.findAl()
+    const keystocks = await Keystock.findAll()
     return res.json(keystocks)
 }))
 

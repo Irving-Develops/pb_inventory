@@ -14,10 +14,9 @@ export default function GetLocations () {
 
      return (
         <div>
-            TEST
             {locations?.map(loc => (
                 <div key={loc.id} >
-                    <Link to={`/${loc.number}`}>{loc.number}</Link>
+                    <Link to={`/locations/${loc.number}`}>{loc.number}</Link>
                 </div>
             ))}
         </div>
