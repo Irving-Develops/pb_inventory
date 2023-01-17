@@ -35,7 +35,9 @@ module.exports = (sequelize, DataTypes) => {
     date_received: DataTypes.DATEONLY,
     type: DataTypes.STRING,
     quantity: DataTypes.INTEGER,
-    measurement: DataTypes.STRING,
+    height: DataTypes.NUMERIC(5,4),
+    width: DataTypes.NUMERIC(5,4),
+    length: DataTypes.INTEGER,
     uom: DataTypes.STRING,
     location_id: DataTypes.INTEGER,
   }, {

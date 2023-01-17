@@ -28,8 +28,16 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      measurement: {
-        type: Sequelize.STRING,
+      height: {
+        type: Sequelize.NUMERIC(5,4),
+        allowNull: false,
+      },
+      width: {
+        type: Sequelize.NUMERIC(5,4),
+        allowNull: false,
+      },
+      length: {
+        type: Sequelize.INTEGER,
         allowNull: false,
       },
       uom: {
